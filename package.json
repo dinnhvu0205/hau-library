@@ -1,0 +1,43 @@
+{
+  "name": "library-management-soa-system",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "auth": "tsx backend/auth_service/index.ts",
+    "book": "tsx backend/book_service/index.ts",
+    "category": "tsx backend/category_service/index.ts",
+    "borrow": "tsx backend/borrow_service/index.ts",
+    "report": "tsx backend/report_service/index.ts",
+    "services": "concurrently \"npm run auth\" \"npm run book\" \"npm run category\" \"npm run borrow\" \"npm run report\""
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.3.0",
+    "@capacitor/cli": "^8.3.0",
+    "@capacitor/core": "^8.3.0",
+    "@types/multer": "^2.0.0",
+    "axios": "^1.13.2",
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "lucide-react": "^0.562.0",
+    "multer": "^2.0.2",
+    "mysql2": "^3.16.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.0.0",
+    "concurrently": "^9.1.2",
+    "tsx": "^4.19.2",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}

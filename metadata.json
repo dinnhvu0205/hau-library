@@ -1,0 +1,7 @@
+{
+  "name": "Library Management SOA System",
+  "description": "A high-performance library management system built with a Service-Oriented Architecture (SOA) design pattern, featuring book management, borrowing tracking, and category control with a sleek dark UI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
